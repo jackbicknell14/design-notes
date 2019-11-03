@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+        <meta name="viewport" contents="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 
         <title>Jacuzzi Mansion</title>
     </head>
@@ -14,6 +15,7 @@
             <div class="row">
                 <ul class="main-nav">
                     <li><a href="#">Tour</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Music</a></li>
                     <li><a href="#">Booking</a></li>
                 </ul>                
@@ -28,19 +30,8 @@
             </div>
         </header>
         
-        <section class="music">
-            <div class="row">
-                <h2>This is where I'll link in the soundcloud widget.
-                </h2>
-            <iframe width="50%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/543861006&color=%23ed0cef&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            </div>
-
-        </section>
         
-        <section class="section-about">
-            <div class="row">
-                <h2>Three boys from South Wales</h2>
-            </div>    
+        <section class="section-about">  
             <div class="band-photo">
                 <img src="resources/img/band-1.jpg">
             </div>
@@ -70,54 +61,85 @@
         </section>
         
         <section class="section-art">
-            <ul class="travel-showcase clearfix">
+            <ul class="travel-showcase top-row clearfix">
                 <li>
-                    <figure class="travel-photo">
-                        <img src="resources/img/travel1.jpg" alt="Korean bibimbap with egg and vegetables">
+                    <figure class="travel-photo-top-row">
+                        <img src="resources/img/travel_1.jpg" alt="Trains at night">
                     </figure>
                 </li>
                 <li>
-                    <figure class="travel-photo">
-                        <img src="resources/img/travel1.jpg" alt="Simple italian pizza with cherry tomatoes">
+                    <figure class="travel-photo-top-row">
+                        <img src="resources/img/travel_2.jpg" alt="New York Subway Platform">
                     </figure>
                 </li>
                 <li>
-                    <figure class="travel-photo">
-                        <img src="resources/img/travel1.jpg" alt="Chicken breast steak with vegetables">
+                    <figure class="travel-photo-top-row">
+                        <img src="resources/img/travel_9.jpg" alt="Frankie New York Subway Train">
                     </figure>
                 </li>
                 <li>
-                    <figure class="travel-photo">
-                        <img src="resources/img/travel1.jpg" alt="Autumn pumpkin soup">
+                    <figure class="travel-photo-top-row">
+                        <img src="resources/img/travel_7.jpg" alt="Corner Building Woods">
                     </figure>
                 </li>
             </ul>
-            <ul class="travel-showcase clearfix">
+            <ul class="travel-showcase bottom-row clearfix">
                 <li>
-                    <figure class="travel-photo">
-                        <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
+                    <figure class="travel-photo-bottom-row">
+                        <img src="resources/img/travel_5.jpg" alt="Edge of Land">
                     </figure>
                 </li>
                 <li>
-                    <figure class="travel-photo">
-                        <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+                    <figure class="travel-photo-bottom-row">
+                        <img src="resources/img/travel_3.jpg" alt="Frankie">
                     </figure>
                 </li>
                 <li>
-                    <figure class="travel-photo">
-                        <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
+                    <figure class="travel-photo-bottom-row">
+                        <img src="resources/img/travel_4.jpg" alt="Corner Building">
                     </figure>
                 </li>
                 <li>
-                    <figure class="travel-photo">
-                        <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
+                    <figure class="travel-photo-bottom-row">
+                        <img src="resources/img/travel_8.jpg" alt="Manhattan">
                     </figure>
                 </li>
             </ul>
         </section>
         
+        <section class="section-music" id="music">
+            <div class="row">
+                <h2>The Brixton EP Hill</h2>
+            </div>
+            <div class="row">
+                <iframe width="50%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/543861006&color=%23ed0cef&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </div>
+        </section>
 
+        <section class="section-tour">
+            <div class="tour-title">
+                TOUR DATES 
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3 box">
+                    <div class="month plain_text" style="display: inline;">Nov</div>
+                    <div class="date plain_text" style="display: inline;">09</div>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <div class="venue plain_text"> Dingwalls </div>
+                    <div class="location plain_text">Camden, LDN</div>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <a class="btn btn-full" href="#">Tickets</a>
+                </div>
+            </div>
+    
+                
+            
 
+        
+        </section>
+  
         
         <section class="booking">
             <h2>This is where booking info will be.</h2>
