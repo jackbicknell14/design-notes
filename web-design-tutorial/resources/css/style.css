@@ -192,6 +192,24 @@ header {
     height:auto;
 }
 
+.dan {
+    width: 33%;
+    padding-left: 5%;
+}
+
+.will {
+    width: 30%;
+    padding-left: 6%;
+    padding-right: 5%;
+    word-wrap: break-word;
+}
+
+.jack {
+    width: 33%; 
+    padding-right: 3%;
+}
+
+
 
 /* ----------------------------------------------- */
 /* ART */
