@@ -77,7 +77,8 @@ h2 {
 /* ---------- BUTTONS ------- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 1% 5%;
     font-weight: 300;
@@ -88,7 +89,8 @@ h2 {
 
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit]  {
     font-size: 30px;
     font-weight: 400;
     background-color: #000;
@@ -99,7 +101,9 @@ h2 {
 
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #ad09ae;
 }
 
@@ -115,7 +119,7 @@ h2 {
 /* HEADER */
 /* ------------------------------------- */
 
-
+/* Main Nav */
 .main-nav {
     width: 950px;
     max-width: 95%;
@@ -145,13 +149,34 @@ h2 {
     border-bottom: 2px solid #ad09ae;
 }
 
+/* Sticky Nav */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0% auto;
+    background-color: rgba(0, 0, 0);
+}
+
+
+.sticky .main-nav {
+    margin-top: 18px;    
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0px;
+    color: #fff;
+}
+
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../img/group2.jpg);
     background-size: cover;
     background-position: center;
     height: 85vh;
-    margin: 0% 10%; 
+    margin: 5% 10%; 
     border: 1px solid #fff;
     text-align: center;
     
@@ -219,10 +244,55 @@ header {
      
 }
 
+/* ----------------------------------------------- */
+/* BOOKING */
+/* ----------------------------------------------- */
+.section-booking {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%; 
+    text-align: center;
+}
 
+.plan-box {
+    display: inline-block;
+}
 
+/* ----------------------------------------------- */
+/* MAILING LIST */
+/* ----------------------------------------------- */
+.section-mailing-list {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%; 
+    text-align: center;
+}
 
+.plan-box {
+    display: inline-block;
+}
 
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0px;
+}
+
+*:focus {
+    outline: none;
+}
 /* ------------------------------------- */
 /* FOOTER */
 /* ------------------------------------- */

@@ -43,7 +43,7 @@
                 MUSIC 
             </div>
             <div class="row">
-                <iframe width="40%" height="10%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/918273355&color=%23161a15&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <iframe width="40%" height="10%" scrolling="no" frameborder="no" allow="autoplay-false" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/918273355&color=%23161a15&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
             </div>
         </section>
         
@@ -84,12 +84,81 @@
             <div class="section-title">
                 BOOKING 
             </div>
-            <h2>This is where booking info will be.</h2>
+            <div clas='row'>
+                <h2>This is where booking info will be.</h2>
+                <div class="plan-box">
+                    Book
+                    <p class="plan-us">Us</p>
+                    <p class="plan-us-now">Now</p>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-full">
+                        Sign Up
+                    </a>
+                </div>                
+            </div>
         </section>
         
-        <section class="section-signup">
+        <section class="section-mailing-list">
             <div class="section-title">
                 MAILING LIST 
+            </div> 
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" if="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search engine</option>
+                                <option value="ad">Advertising</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked>Yes please
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label> 
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label> 
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
             </div>
             <h2>This is where booking info will be.</h2>
         </section>
@@ -120,7 +189,10 @@
                 </p>
             </div>
         </footer>
+        
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="resources/js/script.js"></script>
         
     </body>
     
