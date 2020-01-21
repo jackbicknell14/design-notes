@@ -14,10 +14,10 @@
         <nav>
             <div class="row">
                 <ul class="main-nav">
-                    <li><a href="#">Tour</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Booking</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#booking">Booking</a></li>
                 </ul>                
             </div>
         </nav>    
@@ -26,20 +26,20 @@
                 <div class="logo-text">
                     <img src="resources/img/jm_logo%20clear.png">
                 </div>
-                <a class="btn btn-full" href="#">Listen Now</a>
+                <a class="btn btn-full js--scroll-to-music" href="#">Listen Now</a>
             </div>
         </header>
         
         
-        <section class="section-tour">
-            <div class="section-title">
+        <section class="section-tour js--section-tour">
+            <div class="section-title" id="tour">
                 TOUR 
             </div>
             <a href="https://www.songkick.com/artists/10109606" class="songkick-widget" data-theme="dark" data-detect-style="true" data-font-color="#FFF" data-font-family="Courier New" data-background-color="transparent" data-locale="en">Jacuzzi Mansion tour dates</a>
             <script src="//widget.songkick.com/10109606/widget.js"></script>
         </section>  
-        <section class="section-music">
-            <div class="section-title">
+        <section class="section-music js--section-music">
+            <div class="section-title" id="music">
                 MUSIC 
             </div>
             <div class="row">
@@ -47,7 +47,7 @@
             </div>
         </section>
         
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="section-title">
                 ABOUT 
             </div>
@@ -80,7 +80,7 @@
             </div>
         </section>
         
-        <section class="section-booking">
+        <section class="section-booking" id="booking">
             <div class="section-title">
                 BOOKING 
             </div>
@@ -192,6 +192,7 @@
         
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/script.js"></script>
         
     </body>
