@@ -39,6 +39,11 @@ html {
     font-size: 20px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
+    height: 100%;
+}
+
+body {
+    height: 100%;
 }
 
 /* ------------------------------------- */
@@ -59,6 +64,10 @@ h2 {
     padding: 1% 10%
 }
 
+.section{
+  height: 100%;
+  width: 100%;
+}
 
 .section-title {
     text-align: center;
@@ -120,11 +129,16 @@ input[type=submit]:active {
 /* ------------------------------------- */
 
 /* Main Nav */
+.navbar {
+    width: 100%;
+    z-index: 9999;
+    background-color: #000;
+    position: fixed;
+}
 .main-nav {
     width: 950px;
     max-width: 95%;
-    margin: 3% auto;
-    
+    margin: 3% auto;    
 }
 
 .main-nav li {
@@ -149,35 +163,13 @@ input[type=submit]:active {
     border-bottom: 2px solid #ad09ae;
 }
 
-/* Sticky Nav */
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0% auto;
-    background-color: rgba(0, 0, 0);
-    z-index: 9999;
-}
 
-
-.sticky .main-nav {
-    margin-top: 18px;    
-}
-
-.sticky .main-nav li a:link,
-.sticky .main-nav li a:visited {
-    padding: 16px 0px;
-    color: #fff;
-}
-
-
-header {
+.section-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../img/group2.jpg);
     background-size: cover;
     background-position: center;
     height: 85vh;
-    margin: 5% 10%; 
+    margin: 3.8% 10%; 
     border: 1px solid #fff;
     text-align: center;
     
@@ -390,7 +382,7 @@ footer {
 .js--wp-3,
 .js--wp-4 {
     opacity: 0;
-    animation-duration: 1s;
+    animation-duration: 3s;
 }
 
 
